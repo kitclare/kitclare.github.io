@@ -10,7 +10,6 @@ canvas {
   margin: auto;
   top: 0;
   left: 0;
-  position: absolute;
 }
   /* uncomment lines below if you want your canvas to cover the whole page
   you will also have to create canvas to the window dimensions
@@ -18,4 +17,3 @@ canvas {
   /* top: 0;
   left: 0;
   position: absolute; */
-}

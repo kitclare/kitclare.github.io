@@ -4,12 +4,19 @@ function preload() {
   myFont = loadFont("font/Gaegu-Regular.ttf");
   img = loadImage('images/img.png');
   img2 = loadImage('images/img2.png');
+  img3 = loadImage('images/img3.png');
   story = loadImage('images/story.png');
   story2 = loadImage('images/story2.png');
   story3 = loadImage('images/story3.png');
+  story4 = loadImage('images/story4.png');
+  story5 = loadImage('images/story5.png');
+  story6 = loadImage('images/story6.png');
   black = loadImage('images/black.png');
   black2 = loadImage('images/black2.png');
   black3 = loadImage('images/black3.png');
+  black4 = loadImage('images/black4.png');
+  black5 = loadImage('images/black5.png');
+  black6 = loadImage('images/black6.png');
   blackBox = loadImage('images/blackbox.png')
 }
 
@@ -44,6 +51,8 @@ function draw() {
 
   if (mouseIsPressed && mouseX > 5 && mouseY > 400 && mouseX < 25 && mouseY < 425) {
     image(img2, width / 2 - 100, height / 2 + 10, img.width / 3, img.height / 3);
+  } else if (mouseIsPressed && mouseX > width / 2 - 100 && mouseY > height / 2 + 10 && mouseX < width / 2 + 170 && mouseY < height) {
+    image(img3, width / 2 - 100, height / 2 + 10, img.width / 3, img.height / 3);
   } else {
     image(img, width / 2 - 100, height / 2 + 10, img.width / 3, img.height / 3);
   }
@@ -69,7 +78,9 @@ function mousePressed() {
     fill(0);
     rect(5, 405, 20, 20);
     noFill();
+    stroke(0);
     rect(0, 400, 30, 30);
+    noStroke();
   }
   if (mouseX > 5 && mouseY > 400 && mouseX < 25 && mouseY < 425) {
     image(black, 0, 0, img.width / 3, img.height / 3);
@@ -82,5 +93,63 @@ function mousePressed() {
     image(blackBox, 0, 0, img.width / 3, img.height / 3);
     image(blackBox, 220, 170, img.width / 3, img.height / 3);
     image(blackBox, 0, 400, img.width / 3, img.height / 3);
+    fill(255, 0, 0);
+    rect(350, 310, 20, 20);
+    noFill();
+    stroke(255, 0, 0);
+    rect(345, 305, 30, 30);
+    noStroke();
   }
+
+  if (mouseX > 350 && mouseY > 310 && mouseX < 370 && mouseY < 330) {
+    image(story4, width / 2 + 450, -10, img.width / 3, img.height / 3);
+    stroke(0);
+    fill(0);
+    rect(width / 2 + 460, 5, 20, 20);
+    noFill();
+    rect(width / 2 + 455, 0, 30, 30);
+  }
+
+  if (mouseX > width / 2 + 460 && mouseY > 5 && mouseX < width / 2 + 480 && mouseY < 25) {
+    image(story5, width / 2 + 290, 180, img.width / 3, img.height / 3);
+    fill(0);
+    rect(width / 2 + 295, 185, 20, 20);
+    noFill();
+    stroke(0);
+    rect(width / 2 + 290, 180, 30, 30);
+  }
+
+  if (mouseX > width / 2 + 295 && mouseY > 185 && mouseX < width / 2 + 315 && mouseY < 205) {
+    image(story6, width / 2 + 480, 400, img.width / 3.5, img.height / 3.5);
+    fill(0);
+    rect(width / 2 + 490, 410, 20, 20);
+    noFill();
+    stroke(0);
+    rect(width / 2 + 485, 405, 30, 30);
+    noStroke();
+  }
+
+  if (mouseX > width / 2 + 490 && mouseY > 410 && mouseX < width / 2 + 510 && mouseY < 430) {
+    image(black4, width / 2 + 400, 0, img.width / 3, img.height / 3);
+    image(black5, width / 2 + 290, 180, img.width / 3, img.height / 3);
+    image(black6, width / 2 + 480, 400, img.width / 3.5, img.height / 3.5);
+    setInterval(morebox, 5000);
+  }
+
+  function morebox() {
+    image(blackBox, width / 2 + 400, 0, img.width / 3, img.height / 3);
+    image(blackBox, width / 2 + 290, 180, img.width / 3, img.height / 3);
+    image(blackBox, width / 2 + 480, 400, img.width / 3.5, img.height / 3.5);
+    fill(255, 0, 0);
+    rect(width/2 + 370, 310, 20, 20);
+    noFill();
+    stroke(255, 0, 0);
+    rect(width/2 + 365, 305, 30, 30);
+    noStroke();
+  }
+  if ( mouseX > width/2+370 && mouseY > 310 && mouseX <width/2 +390 && mouseY < 330){
+  fill(0);
+  rect(0,0,windowWidth,windowHeight);
+  }
+
 }

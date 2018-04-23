@@ -37,11 +37,11 @@ function draw() {
   textFont(myFont);
   textSize(90);
   fill(0);
-  text('NOT', width / 2 - 50, height / 2);
+  text('NOT', width / 2 - 60, height / 2);
   fill(255, 0, 0);
   textSize(100);
-  text("I'm", width / 2 - 190, height / 2);
-  text("fine.", width / 2 + 105, height / 2);
+  text("I'm", width / 2 - 200, height / 2);
+  text("fine.", width / 2 + 90, height / 2);
 
   fill(255);
   rect(width / 2 - 110, height / 2 - 300, 300, 70, 10);
@@ -56,6 +56,7 @@ function draw() {
   } else {
     image(img, width / 2 - 100, height / 2 + 10, img.width / 3, img.height / 3);
   }
+
 }
 
 function mousePressed() {
@@ -67,32 +68,32 @@ function mousePressed() {
     rect(0, 0, 30, 30);
   }
   if (mouseX > 5 && mouseY > 5 && mouseX < 25 && mouseY < 25) {
-    image(story2, 220, 170, img.width / 3, img.height / 3);
+    image(story2, width/2-480, height/2-150, img.width / 3, img.height / 3);
     fill(0);
-    rect(210, 185, 20, 20);
+    rect(width/2-475, height/2-145, 20, 20);
     noFill();
-    rect(205, 180, 30, 30);
+    rect(width/2-480, height/2-150, 30, 30);
   }
-  if (mouseX > 210 && mouseY > 185 && mouseX < 230 && mouseY < 205) {
-    image(story3, 0, 400, img.width / 3, img.height / 3);
+  if (mouseX > width/2-475 && mouseY > height/2-145 && mouseX < width/2-455 && mouseY < height/2-125) {
+    image(story3, 0, height/2+50, img.width / 3, img.height / 3);
     fill(0);
-    rect(5, 405, 20, 20);
+    rect(5, height/2 + 60, 20, 20);
     noFill();
     stroke(0);
-    rect(0, 400, 30, 30);
+    rect(0, height/2 + 55, 30, 30);
     noStroke();
   }
-  if (mouseX > 5 && mouseY > 400 && mouseX < 25 && mouseY < 425) {
+  if (mouseX > 5 && mouseY > height/2 + 60 && mouseX < 25 && mouseY < height/2+80) {
     image(black, 0, 0, img.width / 3, img.height / 3);
-    image(black2, 220, 170, img.width / 3, img.height / 3);
-    image(black3, 0, 400, img.width / 3, img.height / 3);
+    image(black2, width/2-475, height/2-145, img.width / 3, img.height / 3);
+    image(black3, 0, height/2+60, img.width / 3, img.height / 3);
     setInterval(box, 5000);
   }
 
   function box() {
     image(blackBox, 0, 0, img.width / 3, img.height / 3);
-    image(blackBox, 220, 170, img.width / 3, img.height / 3);
-    image(blackBox, 0, 400, img.width / 3, img.height / 3);
+    image(blackBox, width/2-475, height/2-145, img.width / 3, img.height / 3);
+    image(blackBox, 0, height/2+60, img.width / 3, img.height / 3);
     fill(255, 0, 0);
     rect(350, 310, 20, 20);
     noFill();
@@ -102,44 +103,45 @@ function mousePressed() {
   }
 
   if (mouseX > 350 && mouseY > 310 && mouseX < 370 && mouseY < 330) {
-    image(story4, width / 2 + 450, -10, img.width / 3, img.height / 3);
+    image(story4, width / 2 + 450, height/2-380, img.width / 3, img.height / 3);
     stroke(0);
     fill(0);
-    rect(width / 2 + 460, 5, 20, 20);
+    rect(width / 2 + 460, height/2-320, 20, 20);
     noFill();
-    rect(width / 2 + 455, 0, 30, 30);
+    rect(width / 2 + 455, height/2-325, 30, 30);
   }
 
-  if (mouseX > width / 2 + 460 && mouseY > 5 && mouseX < width / 2 + 480 && mouseY < 25) {
-    image(story5, width / 2 + 290, 180, img.width / 3, img.height / 3);
+  if (mouseX > width / 2 + 460 && mouseY > height/2-320 && mouseX < width / 2 + 480 && mouseY < height/2-300) {
+    image(story5, width / 2 + 280, height/2-150, img.width / 3, img.height / 3);
     fill(0);
-    rect(width / 2 + 295, 185, 20, 20);
+    rect(width / 2 + 285, height/2-145, 20, 20);
     noFill();
     stroke(0);
-    rect(width / 2 + 290, 180, 30, 30);
+    rect(width / 2 + 280, height/2-150, 30, 30);
   }
 
-  if (mouseX > width / 2 + 295 && mouseY > 185 && mouseX < width / 2 + 315 && mouseY < 205) {
-    image(story6, width / 2 + 480, 400, img.width / 3.5, img.height / 3.5);
+  if (mouseX > width / 2 + 285 && mouseY > height/2-145 && mouseX < width / 2 + 305 && mouseY < height/2-125) {
+    image(story6, width / 2 + 430, height/2+100, img.width / 3, img.height / 4);
     fill(0);
-    rect(width / 2 + 490, 410, 20, 20);
+    rect(width / 2 + 435, height/2+105, 20, 20);
     noFill();
     stroke(0);
-    rect(width / 2 + 485, 405, 30, 30);
+    rect(width / 2 + 430, height/2+100, 30, 30);
     noStroke();
   }
 
-  if (mouseX > width / 2 + 490 && mouseY > 410 && mouseX < width / 2 + 510 && mouseY < 430) {
-    image(black4, width / 2 + 400, 0, img.width / 3, img.height / 3);
-    image(black5, width / 2 + 290, 180, img.width / 3, img.height / 3);
-    image(black6, width / 2 + 480, 400, img.width / 3.5, img.height / 3.5);
+  if (mouseX > width / 2 + 435 && mouseY > height/2+105 && mouseX < width / 2 + 455 && mouseY < height/2+125) {
+    image(black4, width / 2 + 420, height/2-350, img.width / 3, img.height / 3);
+    image(black5, width / 2 + 280, height/2-150, img.width / 3, img.height / 3);
+    image(black6,width / 2 + 430, height/2+100, img.width / 3, img.height / 3);
     setInterval(morebox, 5000);
+    setInterval(printWords, 400);
   }
 
   function morebox() {
-    image(blackBox, width / 2 + 400, 0, img.width / 3, img.height / 3);
-    image(blackBox, width / 2 + 290, 180, img.width / 3, img.height / 3);
-    image(blackBox, width / 2 + 480, 400, img.width / 3.5, img.height / 3.5);
+    image(blackBox, width / 2 + 450, height/2-380, img.width / 3, img.height / 3);
+    image(blackBox, width / 2 + 280, height/2-150, img.width / 3, img.height / 3);
+    image(blackBox, width / 2 + 430, height/2+100, img.width / 3, img.height / 3);
     fill(255, 0, 0);
     rect(width/2 + 370, 310, 20, 20);
     noFill();
@@ -148,8 +150,7 @@ function mousePressed() {
     noStroke();
   }
   if ( mouseX > width/2+370 && mouseY > 310 && mouseX <width/2 +390 && mouseY < 330){
-  fill(0);
-  rect(0,0,windowWidth,windowHeight);
+  setInterval(printWords, 100);
   }
 
 }

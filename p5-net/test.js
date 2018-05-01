@@ -24,14 +24,11 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(200);
   setInterval(printWords, 500);
-  setInterval(startSketch, 180000);
+  setInterval(refreshPage,120000);
 }
 
-function startSketch() {
-  createCanvas(windowWidth, windowHeight);
-  background(200);
-  setInterval(printWords, 500);
-
+function refreshPage(){
+  window.location.assign("https://kitclare.github.io/p5-net/")
 }
 
 function printWords() {

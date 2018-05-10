@@ -59,24 +59,11 @@ header ul li a {
   text-align: center;
   font-size: 40px;
   margin: auto;
-  max-width: 40%;
+  max-width: 20%;
   background-color: #000;
   opacity: 0.7;
   color: #fff;
   padding: 10px;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 50%;
-  padding-top: 100px;
-}
-
-iframe {
-  display: block;
-  margin: 0 auto;
-  margin-top: 100px;
 }
 
 .welcome p {
@@ -90,6 +77,26 @@ iframe {
   padding: 15px;
 }
 
+.welcome h2 {
+  text-align: left;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 20%;
+  background-color: #000;
+  opacity: 0.7;
+  color: #fff;
+  padding: 10px;
+  margin-left: 335px
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 35%;
+  padding-top: 50px;
+}
+
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -100,7 +107,7 @@ a.button {
   color: #fff;
   margin-left: 300px;
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 20px;
 }
 
@@ -114,7 +121,7 @@ a.button2 {
   color: #fff;
   margin-left: 100px;
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 20px;
 }
 
@@ -128,21 +135,57 @@ a.button3 {
   color: #fff;
   margin-left: 100px;
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 20px;
 }
 
-.welcome h2 {
+.description {
+  padding: 90px 0;
+  max-width: 100% background-size: 50% 50%;
+  background-color: #fff;
+  background-image: url("https://78.media.tumblr.com/010c46067b29b710ce9a508fb4171dfb/tumblr_inline_n1ubnjJXdz1qmvw6b.gif");
+}
+
+.description h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+  max-width: 25%;
+  background-color: #000;
+  opacity: 0.7;
+  color: #fff;
+  padding: 10px;
+}
+
+.description h2 {
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
   margin: 0 auto;
   margin-top: 20px;
-  max-width: 20%;
+  max-width: 50%;
   background-color: #000;
   opacity: 0.7;
   color: #fff;
   padding: 10px;
   margin-left: 335px
+}
+
+.description h3 {
+  text-align: left;
+  font-size: 20px;
+  margin: 0 auto;
+  max-width: 50%;
+  background-color: #000;
+  opacity: 0.7;
+  color: #fff;
+  padding: 10px;
+  margin-left: 335px
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 footer {

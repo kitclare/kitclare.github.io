@@ -1,21 +1,35 @@
-<!DOCTYPE html><html><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Demo</title>
-  <script src="aframe.min.js"></script>
-  <script src="aframe-ar.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
 </head>
-
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="appearance.css">
+	<link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+</head>
 <body>
-  <a-scene embedded="" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-    <a-marker type="barcode" value="5">
-      <a-box position="0 0.5 0" material="color: yellow;"></a-box>
-    </a-marker>
-    <a-marker type="barcode" value="3">
-      <a-sphere position="0 0.5 0" radius=".75" color="#EF2D5E"></a-sphere>
-    </a-marker>
-    <a-entity camera=""></a-entity>
-  </a-scene>
+  <header>
 
+       <ul>
+        <li id="list1">Home</li>
+        <li><a href="https://kitclare.github.io/artist_statement.html">Artist Statement</a></li>
+        <li><a href="https://kitclare.github.io/portfolio.html">Portfolio</a></li>
+        <li><a href="https://kitclare.github.io/contacts.html">Contact</a></li>
+      </ul>
+  </header>
 
-</body></html>
+	<div id="main">
+		<div class="welcome">
+			<p>Welcome! I'm Clarisse Lara. I'm a digital media artist with experience in Adobe products such as Photoshop, Premiere, and Illustrator as well as coding. I also enjoy drawing digital art as a hobby.</p>
+	</div>
+	</div>
+	<footer>
+		<div class="social">
+			<a href="https://www.instagram.com/kitclare" id="firstsocial"><img src="http://shopping.na2.netsuite.com/c.4382721/Website%20Images/Homepage%20Icons/IG-Icon-Footer.png" alt="instagram"></a>
+			<a href="https://kitclare.deviantart.com/"><img src="images/da.png" alt="deviantart"></a>
+			<a href="https://twitter.com/kitclars"><img src="http://aretethrowsnation.com/wp-content/uploads/twitter-circle-512.png" alt="twitter"></a>
+		</div>
+
+			<p> &copy; Clarisse Lara | 2017</p>
+	</footer>
+</body>
+</html>
